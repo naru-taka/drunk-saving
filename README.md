@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users table
 
-Things you may want to cover:
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, unipue: true|
 
-* Ruby version
+### Association
+- has_many :tweets
+- has_many :piggy-bank
 
-* System dependencies
+## tweets table
 
-* Configuration
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, forein_key: true|
+|text|text|
+|savings|integer|null: false|
 
-* Database creation
+### Association
+- belongs_to :user
+- belongs_to :piggy-bank
 
-* Database initialization
+## piggy-bank table
 
-* How to run the test suite
+|Column|Type|Options|
+|------|----|-------|
+|total_savings|integer|
+|user_id|integer|null: false, forein_key: true|
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- has_many :tweets
+- belongs_to :user
