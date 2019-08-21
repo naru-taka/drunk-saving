@@ -1,0 +1,20 @@
+.header
+  .header-left
+    禁酒でGo!!!
+  .header-right
+    .header-right__field-left
+      = link_to edit_user_path(current_user) do
+        %button.btn.btn-primary{:type => "button"} ユーザー管理
+
+
+    
+    .header-right__field-right
+      = fa_icon 'twitter', class: 'icon'
+
+.middle
+  .current-user
+    = current_user.name
+  .total-record
+    ￥合計金額
+.main
+  #calendar

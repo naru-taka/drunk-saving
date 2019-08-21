@@ -1,0 +1,52 @@
+.header {
+  box-sizing: border-box;
+  background: linear-gradient(to right, #330033, #fff);
+  height: 100px;
+  width: 100vw;
+  line-height: 100px;
+  display: flex;
+  padding: 0 40px;
+
+  .header-left{
+    font-size: 32px;
+    color: #fff;
+    font-family: Comic Sans MS;
+  }
+  .header-right{
+    font-size: 16px;
+    color: #FFFF33;
+    display: flex;
+    margin: 0 0 0 auto;
+    &__field-left {
+      width: 150px;
+    }
+    &__field-right {
+      width: 150px;
+    }
+  }
+}
+
+.middle {
+  background: linear-gradient(to right, #330033, #fff);
+  color: #fff;
+  width: 100vw;
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  padding: 0 40px;
+
+  .current-user {
+    font-size: 25px;
+  }
+  .total-record {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}
+
+.main {
+  width: 800px;
+  height: calc(100vh-200px);
+  margin: 50px 50px;
+  margin: 0 auto;
+}
