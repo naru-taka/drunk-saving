@@ -3,7 +3,7 @@
     width: 980px;
     margin: 60px auto;
     padding: 60px;
-    background-color: #fff;
+    background: linear-gradient(330deg, #2CD8D5 0%, #C5C1FF 56%, #000066 100%);
     border: 1px solid #ddd;
     border-radius: 5px;
 
@@ -22,28 +22,22 @@
     h2 {
       margin-bottom: 10px;
       letter-spacing: 3px;
+      color: #fff;
       font-size: 40px;
       font-weight: 200;
-
-      &:after {
-        content: '';
-        display: block;
-        width: 60px;
-        margin-top: 5px;
-        border-bottom: 1px solid #38aef0;
-      }
     }
 
     h5 {
       margin-bottom: 20px;
       font-size: 14px;
+      color: #fff;
       font-weight: 200;
     }
 
     .btn {
       margin-top: 20px;
       color: #fff;
-      background-color: #ccc;
+      background-color: #2C7CFF;
       font-size: 14px;
     }
   }
@@ -54,7 +48,7 @@
     .field-label {
       padding: 10px 0;
       letter-spacing: 1px;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 200;
 
       i {
@@ -86,7 +80,7 @@
     float: left;
     margin-top: 20px;
     color: #fff;
-    background-color: #38aef0;
+    background-color: #2C7CFF;
   }
 
   .field-label {
