@@ -1,11 +1,15 @@
-%h2 
-  貯金の登録
+.tweet
+  %h2 
+    貯金の登録
 
-.nav.justyfy-conten-end
-  = link_to '一覧画面へ戻る', tweets_path, class: 'nav-link'
+  .nav.justyfy-conten-end
+    = link_to '一覧画面へ戻る', tweets_path, class: 'nav-link'
 
-= form_tag('/tweets', method: :post) do
-  %input{name: "record", placeholder: "金額を入力してください", type: "number"}/
-  %textarea{cols: "30", name: "text", placeholder: "text", rows: "5"}
+  .contents
+    = form_tag('/tweets', method: :post) do
+      %input{name: "money", placeholder: "金額を入力してください", type: "number"}/
+      %textarea{cols: "30", name: "text", placeholder: "詳細", rows: "5"}
+      %button.btn.btn-primary{type: "submit"} 登録する
 
-  %button.btn.btn-primary{type: "button"} 登録する
+
+

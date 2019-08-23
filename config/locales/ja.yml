@@ -81,6 +81,6 @@ ja:
     tweet:
     id: ID
     text: 詳細
-    record: 貯金金額
+    money: 貯金金額
     created_at: 登録日時
     updated_at: 更新日時

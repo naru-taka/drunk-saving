@@ -1,0 +1,7 @@
+.contents
+  = form_tag("/tweets/#{@tweet.id}", method: :patch ) do
+    %h3
+      編集する
+    %input{name: "money", placeholder: "金額を入力してください", type: "number"}/
+    %textarea{cols: "30", name: "text", placeholder: "詳細", rows: "5"}
+    %button.btn.btn-primary{type: "submit"} 登録する
